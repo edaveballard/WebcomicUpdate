@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Webcomic Update Popup</title>
+
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+	<script src="jquery.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+	<div id='addthis'>
+	<table><tr>
+	<td><input id="name" placeholder="Comic Name" /></td><td><a href="#" id="mylink">Add This Page</a></td>
+	<tr/></table>
+	<hr />
+	</div>
+	<div id='updateList'>
+
+	
+	</div>
+  </body>
+    <style>
+      body {
+        min-width: 230px;
+        overflow-x: hidden;
+      }
+	  #name {
+		width: 100px;
+	  }
+	  #mylink {
+	  
+	  }
+	  #addthis {
+		width: 100%
+		text-align: center;
+	  }
+	  #addthis table {
+		width: 100%;
+	  }
+	  .updateListItem {
+		vertical-align: middle;
+		font-size: 14pt;
+		padding: 4px 8px;
+	  }
+	  .updateListItem:hover {
+		background: #eee;
+		cursor: pointer;
+	  }
+	  .updateListItem img {
+		width: 16pt;
+		position: relative;
+		bottom: -2pt;
+	  }
+
+    </style>
+</html>
